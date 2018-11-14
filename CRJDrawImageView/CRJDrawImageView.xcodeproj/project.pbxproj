@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188D3D00219BC699003AA061 /* CRJImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D3CFF219BC699003AA061 /* CRJImageViewCell.m */; };
 		BA68D54F215A0B3600840CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D54E215A0B3600840CF0 /* AppDelegate.m */; };
 		BA68D552215A0B3600840CF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D551215A0B3600840CF0 /* ViewController.m */; };
 		BA68D555215A0B3600840CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA68D553215A0B3600840CF0 /* Main.storyboard */; };
@@ -18,11 +19,13 @@
 		BA68D56C215A0BAB00840CF0 /* CRJDrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D567215A0BAB00840CF0 /* CRJDrawImageView.m */; };
 		BA68D591215A0C5200840CF0 /* cpu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA68D590215A0C5200840CF0 /* cpu.jpg */; };
 		BA68D594215A0E2D00840CF0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D592215A0E2D00840CF0 /* UIView+Frame.m */; };
-		BA68D597215A0EB500840CF0 /* YJNoteImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D595215A0EB500840CF0 /* YJNoteImageViewController.m */; };
-		BA68D59D215A0F1800840CF0 /* YJNoteImageBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D59C215A0F1800840CF0 /* YJNoteImageBarView.m */; };
+		BA68D597215A0EB500840CF0 /* CRJNoteImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D595215A0EB500840CF0 /* CRJNoteImageViewController.m */; };
+		BA68D59D215A0F1800840CF0 /* CRJNoteImageBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA68D59C215A0F1800840CF0 /* CRJNoteImageBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		188D3CFE219BC699003AA061 /* CRJImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRJImageViewCell.h; sourceTree = "<group>"; };
+		188D3CFF219BC699003AA061 /* CRJImageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRJImageViewCell.m; sourceTree = "<group>"; };
 		BA68D54A215A0B3600840CF0 /* CRJDrawImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRJDrawImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA68D54D215A0B3600840CF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA68D54E215A0B3600840CF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,10 +45,10 @@
 		BA68D590215A0C5200840CF0 /* cpu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cpu.jpg; sourceTree = "<group>"; };
 		BA68D592215A0E2D00840CF0 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		BA68D593215A0E2D00840CF0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		BA68D595215A0EB500840CF0 /* YJNoteImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNoteImageViewController.m; sourceTree = "<group>"; };
-		BA68D596215A0EB500840CF0 /* YJNoteImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNoteImageViewController.h; sourceTree = "<group>"; };
-		BA68D59B215A0F1800840CF0 /* YJNoteImageBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNoteImageBarView.h; sourceTree = "<group>"; };
-		BA68D59C215A0F1800840CF0 /* YJNoteImageBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNoteImageBarView.m; sourceTree = "<group>"; };
+		BA68D595215A0EB500840CF0 /* CRJNoteImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJNoteImageViewController.m; sourceTree = "<group>"; };
+		BA68D596215A0EB500840CF0 /* CRJNoteImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRJNoteImageViewController.h; sourceTree = "<group>"; };
+		BA68D59B215A0F1800840CF0 /* CRJNoteImageBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRJNoteImageBarView.h; sourceTree = "<group>"; };
+		BA68D59C215A0F1800840CF0 /* CRJNoteImageBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJNoteImageBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +88,12 @@
 				BA68D592215A0E2D00840CF0 /* UIView+Frame.m */,
 				BA68D550215A0B3600840CF0 /* ViewController.h */,
 				BA68D551215A0B3600840CF0 /* ViewController.m */,
-				BA68D59B215A0F1800840CF0 /* YJNoteImageBarView.h */,
-				BA68D59C215A0F1800840CF0 /* YJNoteImageBarView.m */,
-				BA68D596215A0EB500840CF0 /* YJNoteImageViewController.h */,
-				BA68D595215A0EB500840CF0 /* YJNoteImageViewController.m */,
+				BA68D59B215A0F1800840CF0 /* CRJNoteImageBarView.h */,
+				BA68D59C215A0F1800840CF0 /* CRJNoteImageBarView.m */,
+				BA68D596215A0EB500840CF0 /* CRJNoteImageViewController.h */,
+				BA68D595215A0EB500840CF0 /* CRJNoteImageViewController.m */,
+				188D3CFE219BC699003AA061 /* CRJImageViewCell.h */,
+				188D3CFF219BC699003AA061 /* CRJImageViewCell.m */,
 				BA68D553215A0B3600840CF0 /* Main.storyboard */,
 				BA68D590215A0C5200840CF0 /* cpu.jpg */,
 				BA68D556215A0B3C00840CF0 /* Assets.xcassets */,
@@ -104,9 +109,9 @@
 			children = (
 				BA68D564215A0BAB00840CF0 /* CRJDrawImageView.h */,
 				BA68D565215A0BAB00840CF0 /* UIView+CRJCaptureImage.m */,
+				BA68D568215A0BAB00840CF0 /* CRJStack.h */,
 				BA68D566215A0BAB00840CF0 /* CRJStack.m */,
 				BA68D567215A0BAB00840CF0 /* CRJDrawImageView.m */,
-				BA68D568215A0BAB00840CF0 /* CRJStack.h */,
 				BA68D569215A0BAB00840CF0 /* UIView+CRJCaptureImage.h */,
 			);
 			path = CRJDrawNote;
@@ -184,13 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA68D594215A0E2D00840CF0 /* UIView+Frame.m in Sources */,
-				BA68D597215A0EB500840CF0 /* YJNoteImageViewController.m in Sources */,
+				BA68D597215A0EB500840CF0 /* CRJNoteImageViewController.m in Sources */,
 				BA68D56B215A0BAB00840CF0 /* CRJStack.m in Sources */,
-				BA68D59D215A0F1800840CF0 /* YJNoteImageBarView.m in Sources */,
+				BA68D59D215A0F1800840CF0 /* CRJNoteImageBarView.m in Sources */,
 				BA68D552215A0B3600840CF0 /* ViewController.m in Sources */,
 				BA68D56A215A0BAB00840CF0 /* UIView+CRJCaptureImage.m in Sources */,
 				BA68D55D215A0B3C00840CF0 /* main.m in Sources */,
 				BA68D56C215A0BAB00840CF0 /* CRJDrawImageView.m in Sources */,
+				188D3D00219BC699003AA061 /* CRJImageViewCell.m in Sources */,
 				BA68D54F215A0B3600840CF0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,12 +338,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZXGQ7FEC2;
 				INFOPLIST_FILE = CRJDrawImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crj.CRJDrawImageView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crj.lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,12 +355,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZXGQ7FEC2;
 				INFOPLIST_FILE = CRJDrawImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.crj.CRJDrawImageView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crj.lottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,10 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "CRJImageViewCell.h"
+#import "CRJNoteImageViewController.h"
 
-#import "YJNoteImageViewController.h"
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@interface ViewController ()
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
@@ -19,20 +22,72 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setConfig];
+    [self makeUI];
+}
+
+- (void)setConfig{
+    
+    _dataSource = [[NSMutableArray alloc] init];
+}
+
+- (void)makeUI{
+    
+    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(addEventAction)];
+    self.navigationItem.rightBarButtonItem = addItem;
+    
+    [self.view addSubview:self.tableView];
+}
+
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    
+    _tableView.frame = self.view.bounds;
+}
+
+#pragma mark - Event Method
+
+- (void)addEventAction{
+    
     UIImage *image = [UIImage imageNamed:@"cpu"];
     
-    YJNoteImageViewController *noteImageVC = [[YJNoteImageViewController alloc] initWithImage:image];
+    CRJNoteImageViewController *noteImageVC = [[CRJNoteImageViewController alloc] initWithImage:image];
     [self.navigationController pushViewController:noteImageVC animated:YES];
     
+    typeof(self) __weak weakSelf = self;
     noteImageVC.doneBlcok = ^(UIImage *doneImage) {
-        
+        [weakSelf.dataSource addObject:doneImage];
+        [weakSelf.tableView reloadData];
     };
 }
 
+#pragma mark - UITableViewDataSource
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return _dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIImage *image = _dataSource[indexPath.row];
+    CRJImageViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.cellImageView.image = image;
+    return cell;
+}
+
+#pragma mark - GET
+
+- (UITableView *)tableView{
+    
+    if(!_tableView){
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerClass:[CRJImageViewCell class] forCellReuseIdentifier:@"cell"];
+        _tableView.rowHeight = 100;
+    }
+    return _tableView;
 }
 
 

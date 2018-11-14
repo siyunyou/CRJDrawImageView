@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YJNoteImageViewController : UIViewController
+@interface CRJNoteImageViewController : UIViewController
 
 @property (nonatomic, copy) void (^doneBlcok)(UIImage *doneImage);
 

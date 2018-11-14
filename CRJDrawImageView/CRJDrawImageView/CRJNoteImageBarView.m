@@ -6,10 +6,10 @@
 //  Copyright © 2018年 ouyang feng. All rights reserved.
 //
 
-#import "YJNoteImageBarView.h"
+#import "CRJNoteImageBarView.h"
 #import "UIView+Frame.h"
 
-@implementation YJNoteImageBarView
+@implementation CRJNoteImageBarView
 
 
 - (instancetype)init

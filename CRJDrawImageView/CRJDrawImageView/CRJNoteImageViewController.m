@@ -6,8 +6,8 @@
 //  Copyright © 2018年 ouyang feng. All rights reserved.
 //
 
-#import "YJNoteImageViewController.h"
-#import "YJNoteImageBarView.h"
+#import "CRJNoteImageViewController.h"
+#import "CRJNoteImageBarView.h"
 #import "CRJDrawImageView.h"
 #import "UIView+Frame.h"
 
@@ -19,15 +19,15 @@
 
 #define kMinSideSpace 15 //最小边距
 
-@interface YJNoteImageViewController ()<YJNoteImageBarViewDelegate>
+@interface CRJNoteImageViewController ()<CRJNoteImageBarViewDelegate>
 
 
-@property (nonatomic, strong) YJNoteImageBarView *barView;
+@property (nonatomic, strong) CRJNoteImageBarView *barView;
 @property (nonatomic, strong) CRJDrawImageView *imageView;
 
 @end
 
-@implementation YJNoteImageViewController
+@implementation CRJNoteImageViewController
 
 - (void)dealloc
 {
@@ -140,10 +140,10 @@
 
 #pragma mark - GET
 
-- (YJNoteImageBarView *)barView{
+- (CRJNoteImageBarView *)barView{
     
     if(!_barView){
-        _barView = [[YJNoteImageBarView alloc] init];
+        _barView = [[CRJNoteImageBarView alloc] init];
         _barView.delegate = self;
     }
     return _barView;

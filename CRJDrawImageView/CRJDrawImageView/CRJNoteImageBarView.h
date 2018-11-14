@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol YJNoteImageBarViewDelegate <NSObject>
+@protocol CRJNoteImageBarViewDelegate <NSObject>
 
 - (void)noteImageBarBackClick;
 - (void)noteImageBarLastClick;
@@ -17,9 +17,9 @@
 
 @end
 
-@interface YJNoteImageBarView : UIView
+@interface CRJNoteImageBarView : UIView
 
-@property (nonatomic, weak) id <YJNoteImageBarViewDelegate>delegate;
+@property (nonatomic, weak) id <CRJNoteImageBarViewDelegate>delegate;
 
 @property (nonatomic, strong) UIButton *backBtn;
 @property (nonatomic, strong) UIButton *lastBtn;
